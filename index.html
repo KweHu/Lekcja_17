@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Paweł Orlik">
+    <title>Kaskadowe arkusze stylów - CSS</title>
+    <style>p{
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 14px;
+        color: red;
+        border: 5px, solid olive;
+        padding: 7px;
+        }
+    </style>
+</head>
+<header>
+    <h1>Strona 1 - Paweł Orlik nr.17</h1>
+</header>
+<body>
+    <section>
+        <p> <!-- Chciałem zrobić listę używając <ul> oraz <li> jednakże css nie wliczał listy jako części akapitu co skutkowało,
+            że lista wyświetlała się w stylu domyślnym-->
+            Ten tekst został umieszczony w akapicie,<br>
+            który został zdefiniowany w CSS'ie<br>
+            Tekst w akapicie powinienen być:<br>
+                &nbsp;&bull;W czcionce <i>Verdana</i><br>
+                &nbsp;&bull;W rozmiarze czcionki 14px<br>
+                &nbsp;&bull;W kolorze czerwonym<br>
+                &nbsp;&bull;W obramowaniu o grubości 5px,<br>
+                &nbsp;&nbsp;&nbsp;z ciągłą, oliwkową linia.<br>
+                &nbsp;&bull;Z marginesami wewnętrznymi 7px
+        </p>
+        Ten tekst został umieszczony poza akapitem,<br>
+        a więc zostanie sformatowny według domyślnego stylu przeglądarki.
+    </section>
+</body>
+</html>
